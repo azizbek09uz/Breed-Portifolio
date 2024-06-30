@@ -25,6 +25,22 @@ header{
     background: url(../img/Screenshot\ 2024-06-23\ 125417.png) no-repeat right -500px top 0px;
     background-size: 1200px;
 }
+.header{
+    background: url(../img/common-banner.png.webp) no-repeat center;
+}
+.header .pages a{
+    color: white;
+}
+.header h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.header .h2 p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+}
 header .navbar{
     position: sticky;
     top: 0px;
@@ -34,8 +50,18 @@ header .navbar{
     background-color: white;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.677);
 }
-.navbar a:first-child{
+header .navbar2{
+    background: transparent;
+}
+header .navbar a:first-child{
     color: #efb6df;
+}
+.portifolio a{
+    color: white;
+}
+.navbar .pages a:hover{
+    color: #efb6df;
+    transition: all .3s ease-in-out;
 }
 header .pages{
     display: flex;
@@ -43,6 +69,13 @@ header .pages{
     font-weight: 600;
     font-size: 12px;
     margin-left: 100px;
+}
+.navbar .h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px;
+    color: white;
 }
 .navbar a{
     color: var(--qora);
@@ -131,8 +164,19 @@ section .container{
 section .left-box img{
     transform: translateX(-200px);
 }
+.portfolio{
+    background: none;
+    padding: 140px 0;
+    padding-top: 0;
+}
 section{
     background: url(../img/testimonial-bg.png.webp) no-repeat left 50px top 1900px;
+}
+.section{
+    background: url(../img/testimonial-bg.png.webp) no-repeat left 50px top 1150px;
+}
+.our-services{
+    background: url(../img/testimonial-bg.png.webp) no-repeat left 50px top 1370px;
 }
 .parent .liniya_parent p{
     font-size: 14px;
@@ -391,14 +435,66 @@ section .service2{
 .bottom-section{
     display: flex;
     align-items: center;
-    gap: 80px;
+   justify-content: space-between;
+   margin-top: 100px;
 }
+section .contact{
+    color: var(--qora);
+}
+section .contact .left-box{
+    width: 50%;
+    flex-direction: column;
+}
+section .contact .right-box{
+    width: 50%;
+}
+section textarea{
+    font-size: 13px;
+    padding-left: 18px;
+    padding: 6px 12px;
+    font-weight: 200;
+    border-radius: 5px;
+    border: 1px solid #f0e9ff;
+    font-family: "Roboto",sans-serif;   
+     max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    max-height: 800px;
+}
+section .contact .input{
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+section input{
+    width: 50%;
+    padding: 10px 12px;
+    padding-left: 18px;
+    border:1px solid #f0e9ff;
+    outline: none;
+}
+section input::placeholder{
+    color: #a7a7a7;
+}
+section .input + input{
+    width: 100% !important;
+    margin-bottom: 40px;
+}
+section .contact .btn{
+    width: 165px;
+}
+section .contact h1{
+    margin-bottom: 20px;
+}
+
+
 
 /* footer */
 
 footer{
     background-color: #021017;
     padding: 120px 0;
+    width: 100%;
 }
 footer .container{
     display: flex;
